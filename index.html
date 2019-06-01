@@ -90,31 +90,44 @@
     </nav>
     <!------------------>
 
-    <!-------Hero section with image-------->
-    <section class="hero is-info is-fullheight-with-navbar is-bold has-background">
-        <img alt="work-desk" class="hero-background is-transparent" 
-        src="images/hero_background.jpg"/>
-    <!------------------------------>
+   <!-- Main part -->
+		<section class="hero is-large has-carousel">
 
-      <!--Hero body-->
-      <div class="hero-body">
-        <div class="container">
+        <!---Carousel---->
+        <div id="carousel-demo" class="hero-carousel">
 
-          <!---Hero Title-------->
-          <p class="title has-text-centered">
-            AlgoWit
-          </p>
-          <!------>
+          <!-- First item-->
+          <div class="item-1">
+            <img src="images/background.jpg" alt="background">
+          </div>
+          <!--------------->
 
+          <!--Second item-->
+          <div class="item-2">
+            <img src="images/background.jpg" alt="background">
+          </div>
+          <!--------------->
+
+          <!--Third item-->
+          <div class="item-3">
+            <img src="images/background.jpg" alt="background">
+          </div>
+          <!--------------->
         </div>
-        <!-------->
+        <!--------------->
 
-      </div>
-      <!----------->
-
-    <!----Hero section ends----------->
+        <div class="hero-head"></div>
+        <div class="hero-body"></div>
+        <div class="hero-foot"></div>
     </section>
-    
-
+    <!-- End main part -->
+  
+      <script src="node_modules/bulma-carousel/dist/js/bulma-carousel.min.js"></script>
+      <script>
+          bulmaCarousel.attach('#carousel-demo', {
+            slidesToScroll: 1,
+            slidesToShow: 1
+          });
+        </script>
   </body>
 </html>
