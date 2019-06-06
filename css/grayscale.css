@@ -57,7 +57,7 @@
     color: white;
   }
   #mainNav.navbar-shrink {
-    background-color: #fff;
+    background-color: whitesmoke;
   }
   #mainNav.navbar-shrink .navbar-brand {
     color: #161616;
@@ -96,10 +96,11 @@
 
 .masthead h1 {
   font-family: 'Varela Round';
-  font-size: 2.5rem;
+  font-size: 2rem;
   line-height: 2.5rem;
   letter-spacing: 0.8rem;
-  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+  padding: 1rem;
+  background: -webkit-linear-gradient(rgba(184, 191, 255, 0.9), #fffefe);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
@@ -162,8 +163,8 @@
 
 .about-section {
   padding-top: 10rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(#161616), color-stop(75%, rgba(22, 22, 22, 0.9)), to(rgba(22, 22, 22, 0.8)));
-  background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#08031f), color-stop(100%, rgba(56, 56, 146, 0.9)), to(rgba(231, 231, 255, 0.8)));
+  background: linear-gradient(to bottom, #08031f 0%, rgba(56, 56, 146, 0.9) 100%, rgba(231, 231, 255, 0.8) 100%);
 }
 
 .about-section p {
@@ -171,7 +172,9 @@
 }
 
 .projects-section {
-  padding: 10rem 0;
+  padding: 5rem 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.2, #f6f6fc), color-stop(100%, rgba(2, 5, 49, 0.9)), to(rgba(183, 183, 252, 0.8)));
+  background: linear-gradient(to bottom, #f6f6fc 0.2 100%, rgba(2, 5, 49, 0.9) 100%, rgba(183, 183, 252, 0.8) 100%);
 }
 
 .projects-section .featured-text {
