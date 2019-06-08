@@ -3,23 +3,6 @@
   background-color: #fff;
 }
 
-#mainNav .navbar-toggler {
-  font-size: 80%;
-  padding: 0.75rem;
-  color: #64a19d;
-  border: 1px solid #64a19d;
-}
-
-#mainNav .navbar-toggler:focus {
-  outline: none;
-}
-
-#mainNav .navbar-brand {
-  color: #161616;
-  font-weight: 700;
-  padding: .9rem 0;
-}
-
 #mainNav .navbar-nav .nav-item:hover {
   color: fade(white, 80%);
   outline: none;
@@ -37,7 +20,6 @@
     padding-bottom: 0;
     border-bottom: none;
     background-color: transparent;
-    -webkit-transition: background-color 0.3s ease-in-out;
     transition: background-color 0.3s ease-in-out;
   }
   #mainNav .navbar-brand {
@@ -45,7 +27,6 @@
     color: rgba(255, 255, 255, 0.5);
   }
   #mainNav .nav-link {
-    -webkit-transition: none;
     transition: none;
     padding: 2rem 1.5rem;
     color: rgba(255, 255, 255, 0.5);
@@ -86,7 +67,6 @@
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.3)), color-stop(75%, rgba(22, 22, 22, 0.1)), to(#161616)), url("../img/light.jpg");
   background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.1) 75%, #161616 100%), url("../img/light.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -134,7 +114,6 @@
 }
 
 .btn {
-  -webkit-box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
   padding: 1.25rem 2rem;
   font-family: 'Varela Round';
@@ -163,41 +142,39 @@
 
 .about-section {
   padding-top: 10rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(#08031f), color-stop(100%, rgba(56, 56, 146, 0.9)), to(rgba(231, 231, 255, 0.8)));
-  background: linear-gradient(to bottom, #08031f 0%, rgba(56, 56, 146, 0.9) 100%, rgba(231, 231, 255, 0.8) 100%);
+  background: linear-gradient(to bottom, #151518 0%, rgba(70, 70, 103, 0.9) 100%, rgba(231, 231, 255, 0.8) 100%);
 }
 
 .about-section p {
   margin-bottom: 5rem;
 }
 
-.projects-section {
+.publications-section {
   padding: 5rem 0;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.2, #f6f6fc), color-stop(100%, rgba(2, 5, 49, 0.9)), to(rgba(183, 183, 252, 0.8)));
   background: linear-gradient(to bottom, #f6f6fc 0.2 100%, rgba(2, 5, 49, 0.9) 100%, rgba(183, 183, 252, 0.8) 100%);
 }
 
-.projects-section .featured-text {
+.publications-section .featured-text {
   padding: 2rem;
 }
 
 @media (min-width: 992px) {
-  .projects-section .featured-text {
+  .publications-section .featured-text {
     padding: 0 0 0 2rem;
     border-left: 0.5rem solid #64a19d;
   }
 }
 
-.projects-section .project-text {
+.publications-section .publications-text {
   padding: 3rem;
   font-size: 90%;
 }
 
 @media (min-width: 992px) {
-  .projects-section .project-text {
+  .publications-section .publications-text {
     padding: 5rem;
   }
-  .projects-section .project-text hr {
+  .publications-section .publications-text hr {
     border-color: #64a19d;
     border-width: .25rem;
     width: 30%;
@@ -206,7 +183,6 @@
 
 .signup-section {
   padding: 10rem 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.1)), color-stop(75%, rgba(22, 22, 22, 0.5)), to(#161616)), url("../img/light.jpg");
   background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/light.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -215,7 +191,6 @@
 }
 
 .signup-section .form-inline input {
-  -webkit-box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
   padding: 1.25rem 2rem;
   height: auto;

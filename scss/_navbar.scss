@@ -1,20 +1,6 @@
 #mainNav {
   min-height: 56px;
   background-color: $white;
-  .navbar-toggler {
-    font-size: 80%;
-    padding: 0.75rem;
-    color: $primary;
-    border: 1px solid $primary;
-    &:focus {
-      outline: none;
-    }
-  }
-  .navbar-brand {
-    color: $black;
-    font-weight: 700;
-    padding: .9rem 0;
-  }
   .navbar-nav {
     .nav-item {
       &:hover {

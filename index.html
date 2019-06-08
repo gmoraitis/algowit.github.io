@@ -31,27 +31,21 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="img/logo.png" width="150" height="50" alt=""></a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars"></i>
-      </button>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top"><div>AlgoWit</div></a>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#about">About</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Science</a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#projects">Project 1</a>
-                <a class="dropdown-item" href="#">Project 2</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else</a>
+                <a class="dropdown-item js-scroll-trigger" href="#publications">Publications</a>
+                <a class="dropdown-item" href="https://github.com/IMS-ML-Lab/publications" target="_blank">GitHub</a>
               </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#signup">Contact</a>
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -63,7 +57,7 @@
     <div class="container d-flex h-100 align-items-center">
       <div class="mx-auto text-center">
         <h1 class="mx-auto my-0">AlgoWit</h1>
-        <h2 class="text-white-50 mx-auto mt-3 mb-5">Machine learning algorithms that generate artificial data.</h2>
+        <h2 class="text-white-50 mx-auto mt-3 mb-5">AI data generation</h2>
         <a href="#about" class="btn btn-info js-scroll-trigger">Learn More</a>
       </div>
     </div>
@@ -75,41 +69,27 @@
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <h3 class="text-white mb-4">What is AlgoWit</h3>
-          <p class="text-white-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet officia facilis illum alias quaerat perspiciatis quae placeat ad eos, aperiam ducimus consectetur commodi repudiandae numquam ex incidunt recusandae quas aliquam.?</p>
+          <p class="text-white-50">Lorem ipsum doloff sit famet consectetur adipisicing elit. Eveniet officia facilis illum alias quaerat perspiciatis quae placeat ad eos, aperiam ducimus consectetur commodi repudiandae numquam ex incidunt recusandae quas aliquam.?</p>
         </div>
       </div>
-      <!---<img src="img/ipad.png" class="img-fluid" alt="">-->
     </div>
   </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="projects-section bg-whitesmoke">
+  <!-- Publications Section -->
+  <section id="publications" class="publications-section bg-whitesmoke">
     <div class="container">
 
-      <!-- Featured Project Row -->
-      <div class="row align-items-center no-gutters mb-4 mb-lg-5 shadow-sm p-1 mb-5 bg-primary rounded">
-        <div class="col-xl-8 col-lg-7">
-          <img class="img-fluid mb-3 mb-lg-0" src="img/code_1.jpg" alt="">
-        </div>
-        <div class="col-xl-4 col-lg-5">
-          <div class="featured-text text-center text-lg-left">
-            <h4>Project 1</h4>
-            <p class="text-black-50 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio inventore nemo ea minus accusamus sint totam harum dolores laborum, officia officiis repellat temporibus rerum quasi, doloremque sunt vel quos nihil.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project One Row -->
-      <div class="row justify-content-center no-gutters mb-5 mb-lg-0 shadow-sm p-1 mb-5 bg-dark rounded">
+      <!-- One Row -->
+      <div class="row justify-content-center no-gutters mb-5 mb-lg-0 shadow-sm p-1 mb-5 rounded">
         <div class="col-lg-6">
-          <img class="img-fluid" src="img/code_2.jpg" alt="">
+          <img class="img-fluid" src="img/gsmote.png" alt="">
         </div>
         <div class="col-lg-6">
           <div class="bg-dark text-center h-100 project">
             <div class="d-flex h-100">
-              <div class="project-text w-100 my-auto text-center text-lg-left">
-                <h4 class="text-white">Project 2</h4>
-                <p class="mb-0 text-white-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo blanditiis, architecto quisquam nesciunt rerum, repudiandae maxime ullam similique ab tenetur quasi! Repellendus natus tempore rem facilis, non dolores facere quasi?</p>
+              <div class="publications-text w-100 my-auto text-center text-lg-left">
+                <h4 class="text-white">Geometric SMOTE</h4>
+                <p class="mb-0 text-white-50">SMOTE algorithm, as well as any other oversampling method based on the SMOTE mechanism, generates synthetic samples along line segments that join minority class instances. G-SMOTE generates synthetic samples in a geometric region of the input space, around each selected minority instance.</p>
                 <hr class="d-none d-lg-block mb-0 ml-0">
               </div>
             </div>
@@ -117,17 +97,17 @@
         </div>
       </div>
 
-      <!-- Project Two Row -->
-      <div class="row justify-content-center no-gutters shadow-sm p-1 mb-5 bg-dark rounded">
+      <!-- Two Row -->
+      <div class="row justify-content-center no-gutters shadow-sm p-1 mb-5 rounded">
         <div class="col-lg-6">
-          <img class="img-fluid" src="img/code_3.jpg" alt="">
+          <img class="img-fluid" src="img/gan.png" alt="">
         </div>
         <div class="col-lg-6 order-lg-first">
           <div class="bg-dark text-center h-100 project">
             <div class="d-flex h-100">
-              <div class="project-text w-100 my-auto text-center text-lg-right">
-                <h4 class="text-white">Project 3</h4>
-                <p class="mb-0 text-white-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, distinctio blanditiis atque laborum quod, accusantium aliquid sequi molestias natus iusto voluptatem! Aliquid doloribus tempore id deleniti ratione in, temporibus repellat!</p>
+              <div class="publications-text w-100 my-auto text-center text-lg-right">
+                <h4 class="text-white">Effective data generation for imbalanced learning using conditional generative adversarial networks</h4>
+                <p class="mb-0 text-white-50">Standard oversampling methods are variations of the SMOTE algorithm, which generates synthetic samples along the line segment that joins minority class samples. Therefore, these approaches are based on local information, rather on the overall minority class distribution. Generative Adversarial Networks (cGAN) is used to approximate the true data distribution and generate data for the minority class of various imbalanced datasets.</p>
                 <hr class="d-none d-lg-block mb-0 mr-0">
               </div>
             </div>
@@ -138,27 +118,8 @@
     </div>
   </section>
 
-  <!-- Signup Section -->
-  <section id="signup" class="signup-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-10 col-lg-8 mx-auto text-center">
-
-          <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-          <h3 class="text-white mb-5">Subscribe to receive updates!</h3>
-
-          <form class="form-inline d-flex">
-            <input type="email" class="form-control bg-whitesmoke flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
-            <button type="submit" class="btn btn-info mx-auto">Subscribe</button>
-          </form>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Contact Section -->
-  <section class="contact-section bg-black">
+  <section class="contact-section bg-black" id="contact">
     <div class="container">
 
       <div class="row">
@@ -169,7 +130,7 @@
               <i class="fas fa-map-marked-alt text-info mb-2"></i>
               <h4 class="text-uppercase m-0">Address</h4>
               <hr class="my-4">
-              <div class="small text-black-50">4923 Market Street, Orlando FL</div>
+              <div class="small text-black-50">Lisbon, Portugal</div>
             </div>
           </div>
         </div>
@@ -181,7 +142,7 @@
               <h4 class="text-uppercase m-0">Email</h4>
               <hr class="my-4">
               <div class="small text-black-50">
-                <a href="#">hello@yourdomain.com</a>
+                <a href="mailto:info@algowit.com">info@algowit.com</a>
               </div>
             </div>
           </div>
