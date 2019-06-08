@@ -37,6 +37,7 @@
     padding-bottom: 0;
     border-bottom: none;
     background-color: transparent;
+    -webkit-transition: background-color 0.3s ease-in-out;
     transition: background-color 0.3s ease-in-out;
   }
   #mainNav .navbar-brand {
@@ -44,6 +45,7 @@
     color: rgba(255, 255, 255, 0.5);
   }
   #mainNav .nav-link {
+    -webkit-transition: none;
     transition: none;
     padding: 2rem 1.5rem;
     color: rgba(255, 255, 255, 0.5);
@@ -55,7 +57,7 @@
     color: white;
   }
   #mainNav.navbar-shrink {
-    background-color: #fff;
+    background-color: whitesmoke;
   }
   #mainNav.navbar-shrink .navbar-brand {
     color: #161616;
@@ -84,7 +86,8 @@
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("../img/background.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.3)), color-stop(75%, rgba(22, 22, 22, 0.1)), to(#161616)), url("../img/light.jpg");
+  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.1) 75%, #161616 100%), url("../img/light.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -93,10 +96,11 @@
 
 .masthead h1 {
   font-family: 'Varela Round';
-  font-size: 2.5rem;
+  font-size: 2rem;
   line-height: 2.5rem;
   letter-spacing: 0.8rem;
-  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+  padding: 1rem;
+  background: -webkit-linear-gradient(rgba(184, 191, 255, 0.9), #fffefe);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
@@ -130,6 +134,7 @@
 }
 
 .btn {
+  -webkit-box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
   padding: 1.25rem 2rem;
   font-family: 'Varela Round';
@@ -158,7 +163,8 @@
 
 .about-section {
   padding-top: 10rem;
-  background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#08031f), color-stop(100%, rgba(56, 56, 146, 0.9)), to(rgba(231, 231, 255, 0.8)));
+  background: linear-gradient(to bottom, #08031f 0%, rgba(56, 56, 146, 0.9) 100%, rgba(231, 231, 255, 0.8) 100%);
 }
 
 .about-section p {
@@ -166,7 +172,9 @@
 }
 
 .projects-section {
-  padding: 10rem 0;
+  padding: 5rem 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.2, #f6f6fc), color-stop(100%, rgba(2, 5, 49, 0.9)), to(rgba(183, 183, 252, 0.8)));
+  background: linear-gradient(to bottom, #f6f6fc 0.2 100%, rgba(2, 5, 49, 0.9) 100%, rgba(183, 183, 252, 0.8) 100%);
 }
 
 .projects-section .featured-text {
@@ -198,7 +206,8 @@
 
 .signup-section {
   padding: 10rem 0;
-  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/bg-signup.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.1)), color-stop(75%, rgba(22, 22, 22, 0.5)), to(#161616)), url("../img/light.jpg");
+  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/light.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -206,6 +215,7 @@
 }
 
 .signup-section .form-inline input {
+  -webkit-box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
   padding: 1.25rem 2rem;
   height: auto;
@@ -261,7 +271,7 @@
 }
 
 body {
-  font-family: 'Nunito';
+  font-family: 'Lucida Grande';
   letter-spacing: 0.0625em;
 }
 
