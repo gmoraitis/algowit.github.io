@@ -4,3 +4,4 @@ package-lock.json
 .sass-cache
 .DS_Store
 bower_components
+build/
