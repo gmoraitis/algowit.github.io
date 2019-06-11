@@ -1,7 +1,9 @@
 {
     "name": "algowit",
     "version": "1.0.0",
-    "scripts": {},
+    "scripts": {
+        "build": "webpack"
+    },
     "description": "",
     "dependencies": {
         "@fortawesome/fontawesome-free": "5.8.2",
