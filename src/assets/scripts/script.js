@@ -1,4 +1,6 @@
-(function($) {
+import '../styles/style.scss';
+
+/*(function($) {
   "use strict"; // Start of use strict
 
   // Smooth scrolling using jQuery easing
@@ -40,3 +42,4 @@
   $(window).scroll(navbarCollapse);
 
 })(jQuery); // End of use strict
+*/
