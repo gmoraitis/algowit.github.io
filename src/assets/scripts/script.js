@@ -1,6 +1,8 @@
 import '../styles/style.scss';
+import 'bootstrap/dist/js/bootstrap.bundle';
+import 'jquery.easing/jquery.easing';
 
-/*(function($) {
+(function($) {
   "use strict"; // Start of use strict
 
   // Smooth scrolling using jQuery easing
@@ -42,4 +44,3 @@ import '../styles/style.scss';
   $(window).scroll(navbarCollapse);
 
 })(jQuery); // End of use strict
-*/
