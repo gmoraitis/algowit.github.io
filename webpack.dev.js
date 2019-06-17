@@ -1,11 +1,13 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-
+const webpack = require('webpack');
 
 module.exports = {
   mode: 'development',
+  entry: './src/assets/scripts/script.js',
   plugins: [
-    new HtmlWebpackPlugin({title: 'AlgoWit', template: 'src/index.html'})],
+    new HtmlWebpackPlugin({template: './src/index.html', favicon: './src/assets/static/favicon.png'}),
+    new webpack.ProvidePlugin({$: 'jquery', jQuery: 'jquery'})],
 
     module: {
         rules: [
