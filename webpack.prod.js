@@ -22,6 +22,6 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({template: './src/index.html', favicon: './src/assets/static/favicon.png'}),
         new webpack.ProvidePlugin({$: 'jquery', jQuery: 'jquery'}),
-        new MiniCssExtractPlugin({filename: "style.scss"})
+        new MiniCssExtractPlugin({filename: "style.css"})
       ]
 };
