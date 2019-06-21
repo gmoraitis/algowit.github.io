@@ -5,7 +5,8 @@
     "scripts": {
         "start": "webpack-dev-server --config webpack.dev.js --open",
         "clean": "shx rm -rf ./build",
-        "build": "npm run clean && webpack --config webpack.prod.js"
+        "build": "npm run clean && webpack --config webpack.prod.js",
+        "preview": "webpack-dev-server --config webpack.prod.js --open"
     },
     "description": "",
     "dependencies": {
