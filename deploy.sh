@@ -2,6 +2,7 @@
 if [ -z "$1" ]
   then
     echo "No commit name is given."
+    exit 1
 fi
 
 # Change to build directory and push gh-pages branch
