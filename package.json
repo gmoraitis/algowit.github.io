@@ -6,7 +6,8 @@
         "start": "webpack-dev-server --config webpack.dev.js --open",
         "clean": "shx rm -rf ./build",
         "build": "npm run clean && webpack --config webpack.prod.js",
-        "preview": "webpack-dev-server --config webpack.prod.js --open"
+        "preview": "webpack-dev-server --config webpack.prod.js --open",
+        "deploy": "shx source deploy.sh"
     },
     "description": "",
     "dependencies": {
