@@ -3,10 +3,10 @@
     "version": "1.0.0",
     "main": "script.js",
     "scripts": {
-        "start": "webpack-dev-server --config webpack.dev.js --open",
+        "start": "webpack-dev-server --open",
         "clean": "shx rm -rf ./build",
-        "build": "npm run clean && webpack --config webpack.prod.js",
-        "preview": "webpack-dev-server --config webpack.prod.js --open",
+        "build": "npm run clean && cross-env NODE_ENV=\"production\" webpack",
+        "preview": "cross-env NODE_ENV=\"production\" webpack-dev-server --open",
         "deploy": "source deploy.sh"
     },
     "description": "",
@@ -18,6 +18,7 @@
         "popper.js": "^1.15.0"
     },
     "devDependencies": {
+        "cross-env": "^5.2.0",
         "css-loader": "^3.0.0",
         "file-loader": "^4.0.0",
         "html-loader": "^0.5.5",
