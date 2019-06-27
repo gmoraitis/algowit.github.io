@@ -7,7 +7,8 @@
         "clean": "shx rm -rf ./build",
         "build": "npm run clean && cross-env NODE_ENV=\"production\" webpack",
         "preview": "cross-env NODE_ENV=\"production\" webpack-dev-server --open",
-        "deploy": "source deploy.sh"
+        "deploy": "source deploy.sh",
+        "lint:scss": "stylelint ./src/**/*.scss --syntax scss"
     },
     "description": "",
     "dependencies": {
@@ -29,6 +30,8 @@
         "sass-loader": "^7.1.0",
         "shx": "^0.3.2",
         "style-loader": "^0.23.1",
+        "stylelint": "^10.1.0",
+        "stylelint-config-standard": "^18.3.0",
         "webpack": "^4.34.0",
         "webpack-cli": "^3.3.4",
         "webpack-dev-server": "^3.7.1"
