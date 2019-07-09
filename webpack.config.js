@@ -16,7 +16,9 @@ if (IS_DEVELOPMENT) {
     mode: 'development',
     entry: './src/assets/scripts/script.js',
     plugins: [
-      new HtmlWebpackPlugin({template: './src/index.html', favicon: './src/assets/static/favicon.png'}),
+      new HtmlWebpackPlugin({filename: 'index.html',template:'./src/index.html', chunks: ['main'],favicon: './src/assets/static/favicon.png'}),
+      new HtmlWebpackPlugin({filename: 'publications.html',template:'./src/publications.html',chunks: ['main'], favicon: './src/assets/static/favicon.png'}),
+      new HtmlWebpackPlugin({filename: 'open_source.html',template:'./src/open_source.html',chunks: ['main'], favicon: './src/assets/static/favicon.png'}),
       new webpack.ProvidePlugin({$: 'jquery', jQuery: 'jquery'})
     ],
     module: {
@@ -41,7 +43,17 @@ else if (IS_PRODUCTION) {
     },
     optimization: {minimizer: [new TerserJSPlugin({}), new OptimizeCSSAssetsPlugin({})]},
     plugins: [
-      new HtmlWebpackPlugin({title:'AlgoWit', template: './src/index.html', favicon: './src/assets/static/favicon.png', minify: {
+      new HtmlWebpackPlugin({filename:'index.html', template: './src/index.html',chunks: ['main'], favicon: './src/assets/static/favicon.png', minify: {
+          removeAttributeQuotes: true,
+          collapseWhitespace: true,
+          removeComments: true
+      }}),
+      new HtmlWebpackPlugin({filename:'publications.html', template: './src/publications.html',chunks: ['main'], favicon: './src/assets/static/favicon.png', minify: {
+          removeAttributeQuotes: true,
+          collapseWhitespace: true,
+          removeComments: true
+      }}),
+      new HtmlWebpackPlugin({filename:'open_source.html', template: './src/open_source.html',chunks: ['main'], favicon: './src/assets/static/favicon.png', minify: {
           removeAttributeQuotes: true,
           collapseWhitespace: true,
           removeComments: true
