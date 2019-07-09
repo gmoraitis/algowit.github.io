@@ -1,5 +1,5 @@
 .publications-section {
-  padding: 5rem 0;
+  padding: 2rem 0;
   background: linear-gradient(to bottom, rgb(246, 246, 252).2 100%,#{fade-out(rgb(2, 5, 49), .1)} 100%,#{fade-out(rgb(183, 183, 252), .2)} 100%);
   .featured-text {
     padding: 2rem;
@@ -19,5 +19,8 @@
         width: 30%;
       }
     }
+  }
+  .portfolio-item {
+    margin-bottom: 30px;
   }
 }
