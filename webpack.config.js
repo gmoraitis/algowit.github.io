@@ -19,6 +19,8 @@ if (IS_DEVELOPMENT) {
       new HtmlWebpackPlugin({filename: 'index.html',template:'./src/index.html', chunks: ['main'],favicon: './src/assets/static/favicon.png'}),
       new HtmlWebpackPlugin({filename: 'publications.html',template:'./src/publications.html',chunks: ['main'], favicon: './src/assets/static/favicon.png'}),
       new HtmlWebpackPlugin({filename: 'open_source.html',template:'./src/open_source.html',chunks: ['main'], favicon: './src/assets/static/favicon.png'}),
+      new HtmlWebpackPlugin({filename: 'about.html',template:'./src/about.html',chunks: ['main'], favicon: './src/assets/static/favicon.png'}),
+      new HtmlWebpackPlugin({filename: 'contact.html',template:'./src/contact.html',chunks: ['main'], favicon: './src/assets/static/favicon.png'}),
       new webpack.ProvidePlugin({$: 'jquery', jQuery: 'jquery'})
     ],
     module: {
@@ -57,6 +59,16 @@ else if (IS_PRODUCTION) {
           removeAttributeQuotes: true,
           collapseWhitespace: true,
           removeComments: true
+      }}),
+      new HtmlWebpackPlugin({filename:'about.html', template: './src/about.html',chunks: ['main'], favicon: './src/assets/static/favicon.png', minify: {
+        removeAttributeQuotes: true,
+        collapseWhitespace: true,
+        removeComments: true
+      }}),
+      new HtmlWebpackPlugin({filename:'contact.html', template: './src/contact.html',chunks: ['main'], favicon: './src/assets/static/favicon.png', minify: {
+        removeAttributeQuotes: true,
+        collapseWhitespace: true,
+        removeComments: true
       }}),
       new MiniCssExtractPlugin({filename: "style.css"}),
       new webpack.ProvidePlugin({$: 'jquery', jQuery: 'jquery'}) 
