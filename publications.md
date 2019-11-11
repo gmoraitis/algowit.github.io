@@ -1,7 +1,7 @@
 ---
-layout: tools
-title: Tools
-description: Applications and components that support Markdown.
+layout: projects
+title: Publications
+description: Scientific algorithms developed by AlgoWit.
 last_modified_at: 2019-10-23
 ---
 
