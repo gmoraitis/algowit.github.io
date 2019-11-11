@@ -1,4 +1,4 @@
-title: "Markdown Guide"
+title: "AlgoWit"
 url: https://www.markdownguide.org # site url
 baseurl: "" # apply repo name if use it under gh-pages branch
 
@@ -32,7 +32,7 @@ destination: ./_site
 
 # Author settings
 author:
-  name     : "Matt Cone"
+  name     : "AlgoWit"
 
 # social settings
 og_locale: "en_US"
