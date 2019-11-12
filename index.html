@@ -3,59 +3,93 @@ title: Home
 ---
 <!DOCTYPE html>
 <html lang="en">
-  {% include head.html %}
-  <body>
-    {% include nav.html %}
+{% include head.html %}
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container">
-        <img src="/assets/images/logo.png" height="100" alt="AlgoWit logo">
-        <p>AlgoWit is an AI research company that aims to develop smart algorithms for various applications
-          including, among others, algorithmic trading, sports betting and fraud detection. AlgoWit invests in
-          research and has multiple publications in the area of artificial data generation. AlgoWit also develops open
-          source software that you can find at GitHub.</p>
-        <!-- <p><a class="btn btn-outline-inverse btn-lg" href="/getting-started" role="button">Get Started</a></p> -->
+<body>
+  {% include nav.html %}
+
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="jumbotron">
+
+    <!-- Logo -->
+    <div id="logo">
+      <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
+          <img height="300px" src="/assets/images/logo.png" alt="AlgoWit logo">
+        </div>
+        <div class="col-sm-3"></div>
       </div>
     </div>
-    <div class="container">
-      <div class="md-guide-feature">
-        <h1 class="no-anchor">Everything you need to learn about AlgoWit.</h1>
-        <p class="lead" style="margin-bottom: 60px">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <div class="row">
-          <div class="col-sm-4">
-            <div class="icon">
-              <i class="fas fa-edit"></i>
-            </div>
-            <h3 class="no-anchor">Publications.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas <a href="/publications">Publications</a> guide. It's designed for everyone, even novices.</p>
+
+    <!-- Description -->
+    <div class="row">
+      <div class="col-xl-3"></div>
+      <div class="col-xl-6">
+        <p id="description">AlgoWit is an AI research company that aims to develop smart algorithms for various
+          applications including, among others, algorithmic trading, sports betting and fraud detection. AlgoWit invests
+          in research and has multiple publications in the area of artificial data generation. AlgoWit also develops
+          open source software that you can find at GitHub.</p>
+      </div>
+      <div class="col-xl-3"></div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="row">
+      <div class="col-xl-4"></div>
+      <div class="col-xl-2 text-center-lg">
+        <p id="left"><a class="btn btn-outline-inverse btn-lg" href="/publications" role="button">Publications</a></p>
+      </div>
+      <div class="col-xl-2 text-center-lg">
+        <p id="right"><a class="btn btn-outline-inverse btn-lg" href="/open_source" role="button">Open Source</a></p>
+      </div>
+      <div class="col-xl-4"></div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="md-guide-feature">
+      <h1 class="no-anchor">Everything you need to learn about AlgoWit.</h1>
+      <p class="lead" style="margin-bottom: 60px">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="icon">
+            <i class="fas fa-edit"></i>
           </div>
-          <div class="col-sm-4">
-            <div class="icon">
-              <i class="fas fa-book-open"></i>
-            </div>
-            <h3 class="no-anchor">Open Source.</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit unde nesciunt cumque molestias eveniet sequi voluptas <a href="/open_source">Open Source page</a>.</p>
+          <h3 class="no-anchor">Publications.</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas <a href="/publications">Publications</a>
+            guide. It's designed for everyone, even novices.</p>
+        </div>
+        <div class="col-sm-4">
+          <div class="icon">
+            <i class="fas fa-book-open"></i>
           </div>
-          <div class="col-sm-4">
-            <div class="icon">
-              <i class="fas fa-code"></i>
-            </div>
-            <h3 class="no-anchor">Take it up a notch.</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, facere eaque. Explicabo temporibus id, minus facilis repellat.</p>
+          <h3 class="no-anchor">Open Source.</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit unde nesciunt cumque molestias eveniet
+            sequi voluptas <a href="/open_source">Open Source page</a>.</p>
+        </div>
+        <div class="col-sm-4">
+          <div class="icon">
+            <i class="fas fa-code"></i>
           </div>
+          <h3 class="no-anchor">Take it up a notch.</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, facere eaque. Explicabo temporibus
+            id, minus facilis repellat.</p>
         </div>
       </div>
     </div>
-    <hr>
-    <div class="container">
-      <div class="md-guide-feature">
-        <h1 class="no-anchor">Stay in the loop.</h1>
-        <p class="lead">Sign up now to get priority notifications about AlgoWit news.</p>
-        <br/>
-        <a class="btn btn-default btn-lg" href="AlgoWit mail" style="margin-top: -10px">Stay Updated</a>
-      </div>
+  </div>
+  <hr>
+  <div class="container">
+    <div class="md-guide-feature">
+      <h1 class="no-anchor">Stay in the loop.</h1>
+      <p class="lead">Sign up now to get priority notifications about AlgoWit news.</p>
+      <br />
+      <a class="btn btn-default btn-lg" href="https://tinyletter.com/markdownguide" style="margin-top: -10px">Stay
+        Updated</a>
     </div>
-    {% include footer.html %}
-  </body>
+  </div>
+  {% include footer.html %}
+</body>
+
 </html>
