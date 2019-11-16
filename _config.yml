@@ -18,6 +18,9 @@ collections:
   tools:
     output: true
     permalink: /tools/:title/
+  publications:
+    output: true
+    permalink: /publications/:title/
     
 
 defaults:
@@ -29,6 +32,10 @@ defaults:
       type: tutorials
     values:
       layout: tutorial
+  - scope:
+      type: publications
+    values:
+      layout: publication
     
 
 # Build settings
