@@ -1,7 +1,7 @@
 ---
 layout: about
 title: Contact
-description: Get in touch with the AlgoWit's maintainer.
+description: Get in touch with AlgoWit.
 ---
 
 <form name="contact" method="POST" netlify>
