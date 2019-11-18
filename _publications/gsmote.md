@@ -2,7 +2,7 @@
 title: Geometric SMOTE
 category: notes
 description: "Geometric SMOTE: A geometrically enhanced drop-in replacement for SMOTE."
-icon: logo_blue.png
+icon: gsmote_logo.png
 website: 
 ---
 
