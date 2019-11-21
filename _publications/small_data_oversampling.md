@@ -2,7 +2,7 @@
 title: Small Data Over-sampling
 category: notes
 description: "Small Data Over-sampling, improving small data prediction accuracy using the Geometric SMOTE algorithm."
-icon: small_data_oversampling_logo.png
+icon: small_data_oversampling.png
 website: 
 ---
 

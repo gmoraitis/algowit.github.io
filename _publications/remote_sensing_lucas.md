@@ -2,7 +2,7 @@
 title: Remote Sensing lucas
 category: notes
 description: "Imbalanced Learning in Land Cover Classification, improving minority classes' prediction accuracy using the Geometric SMOTE algorithm."
-icon: remote_sensing_lucas.png
+icon: remote_sensing.png
 website: 
 ---
 

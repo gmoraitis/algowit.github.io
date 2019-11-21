@@ -2,7 +2,7 @@
 title: SOMO
 category: notes
 description: "Self-Organizing Map Oversampling (SOMO) for imbalanced data set learning."
-icon: gsomo_logo.png
+icon: somo.png
 website: 
 ---
 

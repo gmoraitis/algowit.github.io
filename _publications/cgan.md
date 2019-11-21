@@ -2,7 +2,7 @@
 title: cGAN
 category: notes
 description: "Effective data generation for imbalanced learning using conditional generative adversarial networks."
-icon: cgan_logo.jpg
+icon: cgan.png
 website: 
 ---
 

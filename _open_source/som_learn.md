@@ -1,7 +1,7 @@
 ---
 title: Som Learn
 category: notes
-description: "Geometric SMOTE: A geometrically enhanced drop-in replacement for SMOTE."
+description: "Self-Organizing Map implementation based on Scikit-Learn and Somoclu."
 icon: gsomo_logo.png
 website: 
 ---

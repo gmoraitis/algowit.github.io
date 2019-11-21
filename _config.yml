@@ -15,9 +15,9 @@ collections:
   tutorials:
     output: true
     permalink: /tutorials/:title/
-  tools:
+  open_source:
     output: true
-    permalink: /tools/:title/
+    permalink: /open_source/:title/
   publications:
     output: true
     permalink: /publications/:title/
@@ -28,9 +28,9 @@ collections:
 
 defaults:
   - scope:
-      type: tools
+      type: open_source
     values:
-      layout: tool
+      layout: open_source
   - scope:
       type: tutorials
     values:

@@ -2,7 +2,7 @@
 title: K-means SMOTE
 category: notes
 description: "Improving imbalanced learning through a heuristic oversampling method based on k-means and SMOTE."
-icon: kmeans_smote_logo.png
+icon: kmeans_smote.png
 website: 
 ---
 
