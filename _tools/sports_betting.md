@@ -1,8 +1,8 @@
 ---
-title: G-SOMO
+title: Sports Betting
 category: notes
-description: "An oversampling approach based on Self-Organized Maps and Geometric SMOTE."
-icon: gsomo_logo.png
+description: "Improving imbalanced learning through a heuristic oversampling method based on k-means and SMOTE."
+icon: logo_blue.png
 website: 
 ---
 
@@ -21,4 +21,4 @@ Traditional supervised machine learning classifiers are challenged to learn high
 
 ### Publication Paper
 
-- [Science Direct]()
+- [Science Direct](https://www.sciencedirect.com/science/article/pii/S0020025518304997)

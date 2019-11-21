@@ -1,8 +1,8 @@
 ---
-title: Geometric SMOTE
+title: Som Learn
 category: notes
 description: "Geometric SMOTE: A geometrically enhanced drop-in replacement for SMOTE."
-icon: geometric_smote.png
+icon: gsomo_logo.png
 website: 
 ---
 

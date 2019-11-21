@@ -1,8 +1,8 @@
 ---
-title: cGAN
+title: Research-Learn
 category: notes
-description: "Effective data generation for imbalanced learning using conditional generative adversarial networks."
-icon: cgan_logo.jpg
+description: "Toolbox to simplify the design, execution and analysis of machine learning experiments. It based on statsmodels, scikit-learn and imbalanced-learn."
+icon: research_learn_logo.png
 website: 
 ---
 

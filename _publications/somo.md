@@ -2,13 +2,13 @@
 title: SOMO
 category: notes
 description: "Self-Organizing Map Oversampling (SOMO) for imbalanced data set learning."
-icon: somo_logo.png
+icon: gsomo_logo.png
 website: 
 ---
 
 
 
-<img src="/assets/images/tutorials/terminal.png" class="img-fluid" alt="Markdown in the Bear Markdown app">
+<img src="/assets/images/main_images/terminal.png" class="img-fluid" alt="Markdown in the Bear Markdown app">
 
 
 

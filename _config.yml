@@ -21,6 +21,9 @@ collections:
   publications:
     output: true
     permalink: /publications/:title/
+
+
+ 
     
 
 defaults:
@@ -36,6 +39,9 @@ defaults:
       type: publications
     values:
       layout: publication
+ 
+
+ 
     
 
 # Build settings
