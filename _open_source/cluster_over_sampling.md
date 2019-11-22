@@ -1,14 +1,14 @@
 ---
 title: Cluster Over Sampling
 category: notes
-description: "Clustering based over-sampling."
+description: "Clustering based over-sampling.By clustering the input space and applying any over-sampling algorithm for each resulting cluster with appropriate resampling ratio, the within-classes imbalanced issue can be addressed."
 icon: cluster_oversampling.png
-website: 
+doc_url: https://cluster-over-sampling.readthedocs.io/en/latest/?badge=latest
 ---
 
 
 
-<img src="/assets/images/main_images/terminal.png" class="img-fluid" alt="Markdown in the Bear Markdown app">
+
 
 
 
@@ -19,6 +19,4 @@ Implementation of a general interface for clustering based over-sampling algorit
 
 
 
-### Publication Paper
 
-- [Science Direct]()
