@@ -3,12 +3,12 @@ title: G-SOMO
 category: notes
 description: "An oversampling approach based on Self-Organized Maps and Geometric SMOTE."
 icon: gsomo.png
-website: 
+publication: https://github.com/AlgoWit/publications/tree/master/gsomo 
 ---
 
 
 
-<img src="/assets/images/main_images/terminal.png" class="img-fluid" alt="Markdown in the Bear Markdown app">
+<img src="/assets/images/publications/gsomo.png" class="img-fluid" alt="G-SOMO">
 
 
 
@@ -19,6 +19,4 @@ Traditional supervised machine learning classifiers are challenged to learn high
 
 
 
-### Publication Paper
 
-- [Science Direct]()

@@ -2,13 +2,13 @@
 title: cGAN
 category: notes
 description: "Effective data generation for imbalanced learning using conditional generative adversarial networks."
-icon: cgan.png
-website: 
+icon: cgan.jpg
+publication: https://www.sciencedirect.com/science/article/pii/S0957417417306346 
 ---
 
 
 
-<img src="/assets/images/main_images/terminal.png" class="img-fluid" alt="Markdown in the Bear Markdown app">
+<img src="/assets/images/publications/cgan.jpg" class="img-fluid" alt="cGAN">
 
 
 
@@ -19,6 +19,4 @@ Learning from imbalanced datasets is a frequent but challenging task for standar
 
 
 
-### Publication Paper
 
-- [Science Direct](https://www.sciencedirect.com/science/article/pii/S0957417417306346)

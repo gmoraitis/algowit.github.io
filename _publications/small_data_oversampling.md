@@ -3,12 +3,12 @@ title: Small Data Over-sampling
 category: notes
 description: "Small Data Over-sampling, improving small data prediction accuracy using the Geometric SMOTE algorithm."
 icon: small_data_oversampling.png
-website: 
+publication: https://github.com/AlgoWit/publications/tree/master/small-data-oversampling 
 ---
 
 
 
-<img src="/assets/images/main_images/terminal.png" class="img-fluid" alt="Markdown in the Bear Markdown app">
+<img src="/assets/images/publications/small_data_oversampling.png" class="img-fluid" alt="Small Data Over-sampling">
 
 
 
@@ -19,6 +19,4 @@ In the age of the data deluge there are still many domains and applications rest
 
 
 
-### Publication Paper
 
-- [Science Direct]()

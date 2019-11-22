@@ -3,12 +3,12 @@ title: SOMO
 category: notes
 description: "Self-Organizing Map Oversampling (SOMO) for imbalanced data set learning."
 icon: somo.png
-website: 
+publication: https://www.sciencedirect.com/science/article/pii/S0957417417302324 
 ---
 
 
 
-<img src="/assets/images/main_images/terminal.png" class="img-fluid" alt="Markdown in the Bear Markdown app">
+<img src="/assets/images/publications/somo.png" class="img-fluid" alt="Self-Organizing Map Oversampling">
 
 
 
@@ -19,6 +19,4 @@ Learning from imbalanced datasets is challenging for standard algorithms, as the
 
 
 
-### Publication Paper
 
-- [Science Direct](https://www.sciencedirect.com/science/article/pii/S0957417417302324)

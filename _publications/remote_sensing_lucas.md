@@ -3,12 +3,12 @@ title: Remote Sensing lucas
 category: notes
 description: "Imbalanced Learning in Land Cover Classification, improving minority classes' prediction accuracy using the Geometric SMOTE algorithm."
 icon: remote_sensing.png
-website: 
+publication: https://github.com/AlgoWit/publications/tree/master/remote-sensing-lucas
 ---
 
 
 
-<img src="/assets/images/main_images/terminal.png" class="img-fluid" alt="Markdown in the Bear Markdown app">
+<img src="/assets/images/publications/remote_sensing.png" class="img-fluid" alt="Remote Sensing lucas">
 
 
 
@@ -19,6 +19,4 @@ In spite of its importance in sustainable resource management, the automatic pro
 
 
 
-### Publication Paper
 
-- [Science Direct]()
