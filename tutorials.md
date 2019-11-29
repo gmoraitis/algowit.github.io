@@ -1,7 +1,7 @@
 ---
 layout: projects
 title: Tutorials
-description: Applications and projects developed by AlgoWit for the Open Source world.
+description: Open Source tutorials developed by AlgoWit.
 last_modified_at: 2019-10-23
 ---
 
