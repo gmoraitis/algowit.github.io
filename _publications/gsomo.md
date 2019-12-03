@@ -1,7 +1,7 @@
 ---
 title: G-SOMO
 category: notes
-description: "An oversampling approach based on Self-Organized Maps and Geometric SMOTE."
+description: "G-SOMO, an oversampling approach based on Self-Organized Maps and Geometric SMOTE."
 icon: gsomo.png
 publication: https://github.com/AlgoWit/publications/tree/master/gsomo 
 ---

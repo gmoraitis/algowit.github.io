@@ -1,7 +1,7 @@
 ---
-title: Small Data Over-sampling
+title: Small Data Oversampling
 category: notes
-description: "Small Data Over-sampling, improving small data prediction accuracy using the Geometric SMOTE algorithm."
+description: "Small Data Oversampling, improving small data prediction accuracy using the Geometric SMOTE algorithm."
 icon: small_data_oversampling.png
 publication: https://github.com/AlgoWit/publications/tree/master/small-data-oversampling 
 ---

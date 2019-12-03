@@ -20,16 +20,16 @@ last_modified_at: 2019-10-23
         <div class="card-body">
           
           <!-- Title -->
-          <div class="row">
-            <h6 class="card-title text-center">{{ publication.description }}</h6>
+          <div class="row justify-content-center">
+            <div class="col-11">
+              <h6 class="card-title text-left">{{ publication.description }}</h6>
+            </div>
           </div>
           
           <!-- Image -->
           <div class="row">
             <div class="col text-center">
-            <a href="{{ publication.url }}">
-              <img src="/assets/images/publications/{{ publication.icon }}" class="shadow p-20 mb-20 bg-white rounded img-fluid" alt="{{ publication.title }} logo" style="width:300px; height:auto; margin-top:45px; margin-bottom:45px">
-            </a>
+              <img src="/assets/images/publications/{{ publication.icon }}" class="shadow p-1 mb-30 bg-white rounded img-fluid" alt="{{ publication.title }} logo" style="width: auto; height: 200px; margin-top:45px; margin-bottom:45px">
             </div>
           </div>
           
