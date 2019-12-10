@@ -21,7 +21,7 @@ last_modified_at: 2019-10-23
 
       <!-- Logo and Title -->
       <div class="row">
-        <img src="/assets/images/open-source/{{ tool.icon }}" alt="{{ tool.title }} logo" style="width:50px; height:39px; margin-top:-5px">
+        <img src="/assets/images/open-source/{{ tool.icon }}" class="shadow p-1 mb-30 bg-white rounded img-fluid position-sticky" alt="{{ tool.title }} logo" style="width:50px; height:39px; margin-top:-5px">
       <div class="col">
         <h6 class="card-title">{{ tool.title }}</h6>
       </div>
