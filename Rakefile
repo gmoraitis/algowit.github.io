@@ -8,7 +8,7 @@ task :test do
     :check_favicon => true,
     :external_only => true,
     :only_4xx => true,
-    :url_swap => { %r{https://www.markdownguide.org} => '' },
+    :url_swap => { %r{https://github.com/AlgoWit} => '' },
     :typhoeus => {
       :ssl_verifypeer => false,
       :ssl_verifyhost => 0},

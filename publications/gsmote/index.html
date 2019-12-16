@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
   
 
@@ -10,14 +10,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>404 Not Found | AlgoWit</title>
+  <title>G-SMOTE | AlgoWit</title>
 
-  <meta name="description" content=" AlgoWit.">
+  <meta name="description" content="Geometric SMOTE: A geometrically enhanced drop-in replacement for SMOTE.">
   <meta content="AlgoWit" name=author>
   <meta name="keywords" content="">
   <meta name="twitter:card" content="summary" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="http://localhost:4000/404.html" />
+  <meta property="og:url" content="http://localhost:4000/publications/gsmote/" />
 
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
@@ -27,10 +27,10 @@
   <link rel="stylesheet" href="/assets/css/docsearch.min.css">
 
   
-  <link href="/assets/css/homepage.css" rel="stylesheet">
+  <link href="/assets/css/page.css" rel="stylesheet">
   
 
-  <link rel="canonical" href="http://localhost:4000/404.html">
+  <link rel="canonical" href="http://localhost:4000/publications/gsmote/">
 
   <script src="/assets/javascript/jquery-3.3.1.slim.min.js"></script>
   <script src="/assets/javascript/bootstrap.bundle.min.js"></script>
@@ -39,7 +39,6 @@
   <script defer src="/assets/javascript/fontawesome.min.js"></script>
 </head>
 
-  <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark mdg-nav">
   <div class="container">
     <a class="navbar-brand" href="/">
@@ -61,16 +60,28 @@
   </div>
 </nav>
 
+    <div class="container">
+      <div class="row" style="padding-top:30px;">
+        <div class="col-md-2 d-md-block">
+          <form action="https://www.sciencedirect.com/science/article/pii/S0020025519305353?via%3Dihub">
+            <button type="submit" class="btn btn-info btn-sm" style="font-size:12px">Publication</button>
+          </form>
+          <br><br>
+        </div>
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container">
-        <h1 class="no-anchor">404 Not Found</h1>
-        <p>We can't find that. Would you like to visit our homepage instead?</p>
-        <p><a class="btn btn-outline-inverse btn-lg" href="/" role="button">Go Home</a></p>
+        <div class="col-xs-13 col-sm-13 col-md-9" style="padding-top:30px;">
+          <p><img src="/assets/images/publications/gsmote.png" class="img-fluid" alt="Geometric SMOTE" /></p>
+
+<h3 id="abstract">Abstract</h3>
+
+<p>Classification of imbalanced datasets is a challenging task for standard algorithms. Although many methods exist to address this problem in different ways, generating artificial data for the minority class is a more general approach compared to algorithmic modifications. SMOTE algorithm, as well as any other oversampling method based on the SMOTE mechanism, generates synthetic samples along line segments that join minority class instances. In this paper we propose Geometric SMOTE (G-SMOTE) as a enhancement of the SMOTE data generation mechanism. G-SMOTE generates synthetic samples in a geometric region of the input space, around each selected minority instance. While in the basic configuration this region is a hyper-sphere, G-SMOTE allows its deformation to a hyper-spheroid. The performance of G-SMOTE is compared against SMOTE as well as baseline methods. We present empirical results that show a significant improvement in the quality of the generated data when G-SMOTE is used as an oversampling algorithm. An implementation of G-SMOTE is made available in the Python programming language.</p>
+
+
+        </div>
+
       </div>
-    </div>
-    <footer class="site-footer">
+  </div>
+  <footer class="site-footer">
   <div class="container">
     <div class="row">
       <div class="col-6 text-right">

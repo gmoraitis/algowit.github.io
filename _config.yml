@@ -1,8 +1,8 @@
 title: "AlgoWit"
-url: https://www.markdownguide.org # site url
-baseurl: "" # apply repo name if use it under gh-pages branch
+url: https://github.com/AlgoWit
+baseurl: ""
 
-repo: http://github.com/mattcone/markdown-guide
+repo: https://github.com/AlgoWit
 comments: false
 
 plugins:
