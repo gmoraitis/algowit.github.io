@@ -971,6 +971,7 @@ footer .links a:hover {
 
 #main-part .mdl-slider.is-upgraded::-webkit-slider-thumb {
   background-color: #183D4E;
+  
 }
 
 #main-part .mdl-slider.is-upgraded::-moz-range-thumb {
@@ -991,4 +992,21 @@ footer .links a:hover {
 /* Keep grey focus circle for non-start values */
 #main-part .mdl-slider.is-upgraded:focus:not(:active)::-webkit-slider-thumb {
   box-shadow: 0 0 0 10px rgba(0,0,0, 0.12);
+}
+
+/*Algorithms presentation*/
+rect {
+  fill:rgba(73,155,234,1);
+}
+
+.sorted {
+  fill: red;
+}
+
+.min {
+  fill: red;
+}
+
+.testing {
+  fill: red;
 }
