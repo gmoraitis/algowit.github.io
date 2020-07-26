@@ -13,7 +13,8 @@
   <!-- <meta property="og:url" content="http://playground.tensorflow.org"/>
   <meta property="og:image" content="http://playground.tensorflow.org/preview.png"/> -->
 
-  <script src='./src/sorting.js'></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 
   <meta name="author" content="Algowit">
@@ -21,6 +22,7 @@
   <link rel="stylesheet" href="bundle.css" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500|Material+Icons" rel="stylesheet"
     type="text/css">
+  <!-- <script type="text/javascript" src="./src/sorting.js"></script> -->
   <script src="//d3js.org/d3.v4.min.js"></script>
   <script src="lib.js"></script>
 
@@ -325,88 +327,91 @@
   <div class="ui-batchSize mdl-grid">
     <label for="batchSize">Min Number:&nbsp;&nbsp;<span class="minSlider"></span></label>
     <p class="minSlider">
-      <input class="mdl-slider mdl-js-slider" type="range" id="minSize" min="0" max="100" step="1" value="0">
+      <input class="mdl-slider mdl-js-slider" type="range" id="minSize" min="1" max="100" step="1" value="1">
     </p>
     <!-- show output value of slider -->
     <p id="minSlider"></p>
   </div>
   <div class="ui-batchSize mdl-grid">
-    <label for="batchSize">Max Number:&nbsp;&nbsp;<span class="max"></span></label>
+    <label for="batchSize">Max Number:&nbsp;&nbsp;<span class="maxSlider"></span></label>
     <p class="maxSlider">
-      <input class="mdl-slider mdl-js-slider" type="range" id="maxSize" min="0" max="100" step="1" value="100">
+      <input class="mdl-slider mdl-js-slider" type="range" id="maxSize" min="1" max="100" step="1" value="100">
     </p>
     <!-- show output value of slider -->
     <p id="maxSlider"></p>
   </div>
+  <h2>Range</h2>
+  <div class="row align-items-center">
+    <div class="col-sm-2">
+      <p id="value-range"></p>
+    </div>
+    <div class="col-sm">
+      <div id="slider-range"></div>
+    </div>
+  </div>
 
-  <p>Please input a list of unsorted numbers :</p>
+  <p>
+    <label for="nRadius" style="display: inline-block; width: 240px; text-align: right">
+      radius = <span id="nRadius-value">...</span> </label>
+    <input type="range" min="1" max="150" id="nRadius"> </p>
 
-  <input id="numb">
 
-  <button type="button" onclick="countingSort()">Submit</button>
+  <button type="button" onclick="divideBy()">Click me to change rectangles</button>
+
+
   <div id="buttons">
     <button onclick="mergeSort()">Merge Sort</button>
     <button onclick="insertionSort()">Insertion Sort</button>
     <button onclick="selectionSort()">Selection Sort</button>
     <button onclick="bubbleSort()">Bubble Sort</button>
     <button onclick="bogoSort()">Bogosort</button>
-    
+
     <button onclick="stop = true" style="margin-left:40px">Stop</button>
-    <button onclick="nextStep()">Next Step</button> <!--not working yet -->
+    <!--not working yet -->
+    <button onclick="nextStep()">Next Step</button>
+    <!--end button-->
     <button onclick="reset()">Reset</button>
     <button onclick="array = d3.shuffle(d3.range(1,count));reset()">Shuffle</button>
   </div>
   <div>Steps: <span id="counter">0</span></div>
-
+  <!--  -->
 
 
   <script>
-    function countingSort(arr, max, min) {
-
-
-      // Get the value of the input field with id="numb"
-      arr = document.getElementById("numb").value;
-
-      let i = min,
-        j = 0,
-        len = arr.length
-      count = [];
-
-      for (i; i <= max; i++) {
-        count[i] = 0;
-      }
-      for (i = 0; i < len; i++) {
-        count[arr[i]] += 1;
-      }
-      for (i = min; i <= max; i++) {
-        while (count[i] > 0) {
-          arr[j] = i;
-          j++;
-          count[i]--;
-
-        }
-      }
-      document.getElementById("demo").innerHTML = arr;
-    }
     var minSlider = document.getElementById("minSize");
     var maxSlider = document.getElementById("maxSize");
     var minOutput = document.getElementById("minSlider");
     var maxOutput = document.getElementById("maxSlider");
 
-    minOutput.innerHTML = minSlider.min;
+    minOutput.innerHTML = minSlider.min;// shows the default values in sliders as page load
     maxOutput.innerHTML = maxSlider.max;
 
-    minSlider.oninput = function () {
+    minSlider.oninput = function () { //shows the values as we drag the pin
       minOutput.innerHTML = this.value;
-      
-      
+
     }
     maxSlider.oninput = function () {
       maxOutput.innerHTML = this.value;
     }
 
-    // sorting.js
-    var count = 1 + 20 , //number of rects to show
+    var sum = 0;
+    function divideBy(sum) {
+      var num1 = 0;
+      var num2 = 0;
+
+      num1 = document.getElementById("maxSize").value;
+      num2 = document.getElementById("minSize").value;
+      sum = num1 - num2;
+      console.log(sum);
+      return sum
+
+    }
+
+
+    // d3 sorting.js
+
+
+    var count = 1 + 8,//number of rects to show
       durationTime = 4000 / count, //execution time of steps
       array = d3.shuffle(d3.range(1, count)),
       unsortedArray = [...array],
@@ -419,23 +424,28 @@
       width = 760 - margin.left - margin.right,
       height = 5000 - margin.top - margin.bottom;
 
+
     var barWidth = width / count; //change the width of rects depending of the number of rects
 
     var x = d3.scaleLinear()
       .domain([0, count])
       .range([0, width]);
 
+
     var svg = d3.select("body").append("svg")
-      .attr("width", width + margin.left + margin.right)
+      .attr("width", width + margin.top + margin.right)
       .attr("height", height + margin.top + margin.bottom)
       .append("g")
       .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
 
+    ////
     var rects = svg.append("g")
       .attr("transform", "translate(" + barWidth + ",2)")
       .selectAll("rect")
       .data(unsortedArray)
       .enter().append("rect")
+
+
 
     var labels = svg.selectAll("text")
       .data(unsortedArray)
@@ -449,6 +459,53 @@
       .attr("transform", function (d, i) { return "translate(" + (x(i) - barWidth) + ",0)" })
       .attr("width", barWidth * .9)
       .attr("height", function (d) { return d * barWidth / 3 })
+      
+
+    //demo
+
+    // when the input range changes update the circle
+    d3.select("#nRadius").on("input", function () {
+      update(+this.value);
+    });
+
+    // Initial starting radius of the circle
+    update(12);
+
+
+    // update the elements
+    function update(nRadius) {
+      // adjust the text on the range slider
+      d3.select("#nRadius-value").text(nRadius);
+      d3.select("#nRadius").property("value", nRadius);
+      // update the circle radius
+     
+ 
+
+
+      
+   
+
+
+    
+
+      d3.select("#counter").html(steps = 0)
+
+      labels.attr("class", "")
+        .transition().duration(1000)
+        .attr("transform", function (d, i) { return "translate(" + (x(i)) + ", 0)" })
+        
+
+      rects.attr("class", "")
+        .transition().duration(1000)
+        .attr("transform", function (d, i) { return "translate(" + (x(i - 1)) + ", 0)" })
+        .attr("width", barWidth * .9)
+        .attr("height", function (d) { return d * barWidth / 3 })
+
+    }
+
+
+
+    //buttons
 
     function reset() { //bring back rects in random order
       unsortedArray = [...array];
@@ -750,7 +807,7 @@
         }
       }
     }
-    
+
 
     function slide(d, i) {
       d3.select("#text" + d)
@@ -761,6 +818,7 @@
         .transition().duration(durationTime)
         .attr("transform", function (d) { return "translate(" + (x(i - 1)) + ", 0)" })
     }
+
   </script>
 
 

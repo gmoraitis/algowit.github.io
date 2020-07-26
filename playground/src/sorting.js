@@ -1,5 +1,32 @@
-var count = 1 + 50,
-    durationTime = 2000 / count,
+var minSlider = document.getElementById("minSize");
+var maxSlider = document.getElementById("maxSize");
+var minOutput = document.getElementById("minSlider");
+var maxOutput = document.getElementById("maxSlider");
+
+
+minOutput.innerHTML = minSlider.min;// shows the default values in sliders as page load
+maxOutput.innerHTML = maxSlider.max;
+
+minSlider.oninput = function () { //shows the values as we drag the pin
+    minOutput.innerHTML = this.value;
+
+}
+maxSlider.oninput = function () {
+    maxOutput.innerHTML = this.value;
+}
+
+var x = calc(minOutput, maxOutput);   // Function is called, return value will end up in x
+
+function calc(min, max) {
+    return min - max;             // Function returns the product of min and max
+}
+console.log(x);
+
+
+// d3 sorting.js
+
+var count = 1 + x,//number of rects to show
+    durationTime = 4000 / count, //execution time of steps
     array = d3.shuffle(d3.range(1, count)),
     unsortedArray = [...array],
     sortedArray = [],
@@ -8,10 +35,10 @@ var count = 1 + 50,
     bogoShuffles = 0;
 
 var margin = { top: 40, right: 40, bottom: 180, left: 40 },
-    width = 960 - margin.left - margin.right,
+    width = 760 - margin.left - margin.right,
     height = 5000 - margin.top - margin.bottom;
 
-var barWidth = width / count;
+var barWidth = width / count; //change the width of rects depending of the number of rects
 
 var x = d3.scaleLinear()
     .domain([0, count])
@@ -42,7 +69,7 @@ rects.attr("id", function (d) { return "rect" + d })
     .attr("width", barWidth * .9)
     .attr("height", function (d) { return d * barWidth / 3 })
 
-function reset() {
+function reset() { //bring back rects in random order
     unsortedArray = [...array];
     sortedArray = [];
     stop = false;
@@ -50,11 +77,11 @@ function reset() {
     d3.select("#counter").html(steps = 0)
 
     labels.attr("class", "")
-        .transition().duration(2000)
+        .transition().duration(1000)
         .attr("transform", function (d, i) { return "translate(" + (x(i)) + ", 0)" })
 
     rects.attr("class", "")
-        .transition().duration(2000)
+        .transition().duration(1000)
         .attr("transform", function (d, i) { return "translate(" + (x(i - 1)) + ", 0)" })
 }
 
@@ -343,6 +370,7 @@ function mergeSort() {
     }
 }
 
+
 function slide(d, i) {
     d3.select("#text" + d)
         .transition().duration(durationTime)
@@ -351,4 +379,4 @@ function slide(d, i) {
     d3.select("#rect" + d)
         .transition().duration(durationTime)
         .attr("transform", function (d) { return "translate(" + (x(i - 1)) + ", 0)" })
-}
+} 
